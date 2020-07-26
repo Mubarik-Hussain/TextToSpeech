@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Text to Speech" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Text to Speech</title>
+</head>
+
+<body>
+  <div class="container  mt-5">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <h1>Text to speech</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="form-group">
+        <select id="updateSpeaker" class="form-control"></select>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="w-100">
+        <div class="form-group">
+          <textarea name="speakingContent" id="speakingContent" class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <button id="speakContent" class="btn btn-primary"><i class="fas fa-microphone-alt"></i> Speak</button>
+      </div>
+      <div class="col-md-auto">
+        <button id="pause" class="btn playing btn-primary disabled"><i class="fas fa-pause"></i> Pause</button>
+      </div>
+      <div class="col-md-auto">
+        <button id="resume" class="btn playing btn-primary disabled"><i class="fas fa-play"></i> Resume</button>
+      </div>
+      <div class="col-md-auto">
+        <button id="stopSpeaking" class="btn btn-warning"><i class="fas fa-microphone-alt-slash"></i> Cancel</button>
+      </div>
+      <div class="col-md-auto">
+        <button id="clearContent" class="btn btn-danger"><i class="fas fa-eraser"></i> Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key={Your Keys Here}"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

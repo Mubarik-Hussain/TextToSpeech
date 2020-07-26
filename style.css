@@ -1,0 +1,7 @@
+textarea.form-control{
+    height: 300px;
+    font-size: 14px;
+}
+.disabled{
+    pointer-events: none;
+}
